@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300,500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;500;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
@@ -16,16 +16,111 @@
 <body>
     <div class="wrapper">
         <div class="content">
-         
-
-
-            
+            <header class="header">
+                <div class="container">
+                    <div class="header__top">
+                        <div class="header__logo"><a href="#"><img class="logo__img" src="images/logo.png"
+                                    alt="logo"></a></div>
+                        <div class="header__menu">
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="header-grand" style="background-image: url(images/head-bg.jpg);">
+                <div class="slider-wrapper">
+                    <div class="container-fluid">
+                        <div class="header-grand__slider-inner">
+                            <div class="header-grand__slider-item">
+                                <div class="header-grand__slider__title">Lian Creative Agency</div>
+                                <div class="header-grand__slider__subtitle">Minimal Freelance Portfolio </div>
+                            </div>
+                            <div class="header-grand__slider-item">
+                                <div class="header-grand__slider__title">Lian Creative Agency</div>
+                                <div class="header-grand__slider__subtitle">Minimal Freelance Portfolio </div>
+                            </div>
+                            <div class="header-grand__slider-item">
+                                <div class="header-grand__slider__title">Lian Creative Agency</div>
+                                <div class="header-grand__slider__subtitle">Minimal Freelance Portfolio </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer class="footer">
+        <section class="product">
+            <div class="product__wrapper">
+                <div class="container">
+                    <div class="cotainer">
+                        <div class="product__inner">
+                            <div class="product__inner-btns">
+                                <button type="button" data-filter="All">All</button>
+                                <button type="button" data-filter=".category-psd">Logo</button>
+                                <button type="button" data-filter=".category-ios">Mobile App</button>
+                                <button type="button" data-filter=".category-rupor">WordPress</button>
+                                <button type="button" data-filter=".category-werdpress">Web Design</button>
+                                <button type="button" data-filter=".category-mockup">UI/IX</button>
+                                <button type="button" data-filter=".category-mockup">Branding</button>
+                            </div>
+                            <div class="product__inner-box">
+                                <div class="product__col mix category-psd category-new" data-order="1">
+                                    <div class="product__item">
+                                        <img class="product__item-img" src="images/hmo.jpg">
+                                    </div>
+                                    <div class="product__item">
+                                        <img class="product__item-img" src="images/flack.jpg">
+                                    </div>
+                                    <div class="product__item mix category-rupor category-new" data-order="3">
+                                        <img class="product__item-img" src="images/dxc.jpg">
+                                    </div>
+                                </div>
+                                <div class="product__col mix category-ios category-new" data-order="2">
+                                    <div class="product__item mix category-mockup category-new" data-order="4">
+                                        <img class="product__item-img" src="images/layer.jpg">
+                                    </div>
+                                    <div class="product__item mix category- category-new" data-order="5">
+                                        <img class="product__item-img" src="images/ops.jpg">
+                                    </div>
+                                    <div class="product__item mix category-mockup category-new" data-order="6">
+                                        <img class="product__item-img" src="images/wrpkow.jpg">
+                                    </div>
+                                    <div class="product__item mix category-mockup category-new" data-order="7">
+                                        <img class="product__item-img" src="images/ijocg.jpg">
+                                    </div>
+                                </div>
+                                <div class="product__col mix category-werdpress category-new" data-order="10">
+                                    <div class="product__item mix category-werdpress category-new" data-order="8">
+                                        <img class="product__item-img" src="images/rnow.jpg">
+                                    </div>
+                                    <div class="product__item mix category-werdpress category-new" data-order="9">
+                                        <img class="product__item-img" src="images/cour.jpg">
+                                    </div>
+                                    <div class="product__item">
+                                        <img class="product__item-img" src="images/bob.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </footer>
+
     </div>
- 
+    <footer class="footer">
+
+    </footer>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

@@ -2,6 +2,135 @@
 @import 'global';
 @import 'fonts';
 
+// start-header
+.header {
+    height: 90px;
+
+    &__top {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        padding-top: 27px;
+        padding-bottom: 28px;
+    }
+
+    .menu {
+        padding-right: 25px;
+
+        .menu__list {
+            li {
+                display: inline-block;
+                text-transform: uppercase;
+
+                a {
+                    @include f700;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: $color-title;
+                    }
+                }
+
+                &+li {
+                    margin-left: 45px;
+                }
+            }
+        }
+
+    }
+
+}
+
+.header-grand {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid $border-grey;
+    margin-bottom: 33px;
+}
+
+
+.header-grand__slider-inner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 263px;
+    text-transform: uppercase;
+}
+
+.header-grand__slider__title {
+    max-width: 667px;
+    font-size: 48px;
+    background-color: #000;
+    padding: 15px 10px;
+    @include f300;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+
+.header-grand__slider__subtitle {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 180px;
+}
+
+// fin-header
+// start-product
+.product{
+    margin-bottom: 60px;
+    background: $color-bg;
+    border-bottom: 1px solid $border-grey;
+}
+.product__inner-btns{
+    margin-bottom: 35px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 20px 0;
+    button{
+        @include f700;
+        color: $solor-text;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+        background: none;
+        position: relative;
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+        &::after{
+            content: '/';
+            position: absolute;
+            margin-left: 12px;
+            font-size: 20px;
+            top: -3px;
+            @include f300;
+        }
+        &+button{
+            margin-left: 25px;
+        }
+    }
+   
+
+}
+
+.product__inner-box{
+    display: flex;
+    justify-content: space-between;
+
+
+    .product__item{
+        margin-bottom: 30px;  
+    }
+}
+// fin-product
 
 
 @import 'media';
